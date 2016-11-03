@@ -1,0 +1,6 @@
+_site
+*.swp
+*.swo
+.sass-cache
+.jekyll-metadata
+node_modules
