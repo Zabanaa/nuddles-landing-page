@@ -2,13 +2,15 @@
 layout: default
 ---
 
+{% include hero.html %}
+
 <main>
     <h1>Bitch please</h1>
-    {% include hero.html %}
-    {% include installation.html %}
-    {% include usage.html %}
-    {% include example.html %}
-    {% include footer.html %}
+    <section class="card">{% include installation.html %}</section>
+    <section class="card">{% include usage.html %}</section>
+    <section class="card">{% include examples.html %}</section>
+    <section class="card">{% include cta.html %}</section>
 </main>
 
+{% include footer.html %}
 
