@@ -1,5 +1,5 @@
 {
-"name": "nuddles-landing-page",
+  "name": "nuddles-landing-page",
   "version": "0.0.0",
   "description": "The landing page for the Nuddles package",
   "main": "gulpfile.js",
@@ -32,5 +32,9 @@
   "bugs": {
     "url": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync/issues"
   },
-  "homepage": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync"
+  "homepage": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync",
+  "dependencies": {
+    "gulp-concat": "^2.6.0",
+    "gulp-uglify": "^2.0.0"
+  }
 }

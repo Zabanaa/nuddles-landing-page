@@ -63,8 +63,6 @@ gulp.task('imagemin', function() {
         .pipe(gulp.dest('_site/assets/img'))
         .pipe(browserSync.reload({stream:true}))
         .pipe(gulp.dest('assets/img'));
-
-
 })
 
 
@@ -83,22 +81,6 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest('assets/js'));
 })
 
-
-/**
- * Jade compiling
- */
-
-gulp.task('jade', function() {
-
-    return gulp.src('_dev/jade/*.jade')
-        .pipe(jade())
-        .pipe(gulp.dest('_includes'))
-
-});
-
-
-
-
 /**
  * Watch scss files for changes & recompile
  * Watch html/md files, run jekyll & reload BrowserSync
@@ -106,7 +88,6 @@ gulp.task('jade', function() {
 gulp.task('watch', function () {
     gulp.watch('_dev/sass/**/*.sass', ['sass']);
     gulp.watch(['*.html', '_layouts/*.html', '_posts/*', '_includes/*'], ['jekyll-rebuild']);
-    gulp.watch('_dev/jade/*', ['jade']);
     gulp.watch('_dev/img/*', ['imagemin']);
     gulp.watch('_dev/js/*', ['scripts']);
 });
