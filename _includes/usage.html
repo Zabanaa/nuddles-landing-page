@@ -1,0 +1,34 @@
+<h3 class="card__title"> # Usage </h3>
+
+<p class="card__description">To use Nuddles inside your project, you need to require it and create a new Client
+instance, then pass it your access tokens.</p>
+
+<div class="code card__code-editor">
+    <pre class="code__example">
+        <code>const nuddles = require('nuddles')</code>
+        <code>
+        const client  = new nuddles.Client({
+            clientId: "your_client_id",
+            clientSecret: "your_client_secret"
+        })
+        </code>
+    </pre>
+</div>
+
+<p class="card__description">Nuddles also provides two other classes that you can use:
+Venue and List, each accept an id along with a Client object as their
+arguments. <br>
+Let's see how we can create them
+</p>
+
+<div class="code card__code-editor">
+    <pre class="code__example">
+        <code>const venue = new nuddles.Venue(client, "venue_id")</code>
+        <code>const list  = new nuddles.List(client, "list_id")</code>
+    </pre>
+</div>
+
+<p class="card__description">
+    Nuddles uses Promises to make calls to the Foursquare API, which allows you to
+    manipulate the response object as you wish.
+</p>

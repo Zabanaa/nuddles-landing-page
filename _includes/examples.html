@@ -1,0 +1,38 @@
+<h3 class="card__title"># Examples</h3>
+
+<p class="card__description">Search venues</p>
+
+<div class="code card__code-editor">
+    <pre class="code__example">
+        <code>
+        client.searchVenues({near: 'Paris, France', query:'Pizza'})
+            .then( (data) => {
+                // Do something with the response
+            })
+            .catch( (errorMsg) => {
+                // Do something with the error message
+             })
+        </code>
+    </pre>
+</div>
+
+<p class="card__description">Get a Venue's opening hours</p>
+
+<div class="code card__code-editor">
+    <pre class="code__example">
+        <code>venue.getOpeningHours()</code>
+    </pre>
+</div>
+
+<p class="card__description">Get a List's followers</p>
+
+<div class="code card__code-editor">
+    <pre class="code__example">
+        <code>list.getFollowers()</code>
+    </pre>
+</div>
+
+<p class="card__description">
+    For a full list of usable methods, please visit the
+    <a href="https://github.com/Zabanaa/nuddles#full-list-of-methods">docs on GitHub</a>
+</p>
