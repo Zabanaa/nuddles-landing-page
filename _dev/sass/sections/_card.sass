@@ -20,6 +20,10 @@
     margin-bottom: 1em
     font-weight: bold
 
+    +mobile
+        font-size: .9em
+        line-height: 1.5
+
     +tablet
         font-size: .9em
 
@@ -37,6 +41,12 @@
         padding: .5em 0
         font-size: 1.4em
         margin-bottom: 1em
+
+        +mobile
+            font-size: 1em
+.no-mobile
+    +mobile
+        display: none
 
 .card__link
     background: $tertiary

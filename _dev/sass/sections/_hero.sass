@@ -7,14 +7,28 @@
     justify-content: center
     text-align: center
 
+    +mobile
+        padding: 0 3em
+
 .hero__logo
     +size(190px)
     margin: 0 auto
 
-    svg
-        path
-            fill: white
+    +mobile
+        +size(120px)
+
+    svg path
+        fill: white
 
 .hero__name
     font-size: 5rem
     margin-bottom: 2rem
+
+    +mobile
+        font-size: 3rem
+        margin-bottom: 1rem
+
+.hero__tagline
+
+    +mobile
+        font-size: 1.2em
