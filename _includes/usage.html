@@ -4,15 +4,14 @@
 instance, then pass it your access tokens.</p>
 
 <div class="code card__code-editor">
-    <pre class="code__example">
-        <code>const nuddles = require('nuddles')</code>
-        <code>
-        const client  = new nuddles.Client({
-            clientId: "your_client_id",
-            clientSecret: "your_client_secret"
-        })
-        </code>
-    </pre>
+    <pre class="code__example"> <code>
+            const nuddles = require('nuddles')
+
+            const client  = new nuddles.Client({
+                clientId: "your_client_id",
+                clientSecret: "your_client_secret"
+            })
+    </code></pre>
 </div>
 
 <p class="card__description">Nuddles also provides two other classes that you can use:
@@ -22,10 +21,11 @@ Let's see how we can create them
 </p>
 
 <div class="code card__code-editor">
-    <pre class="code__example">
-        <code>const venue = new nuddles.Venue(client, "venue_id")</code>
-        <code>const list  = new nuddles.List(client, "list_id")</code>
-    </pre>
+    <pre class="code__example"><code>
+        const venue = new nuddles.Venue(client, "venue_id")
+
+        const list  = new nuddles.List(client, "list_id")
+    </code></pre>
 </div>
 
 <p class="card__description">
